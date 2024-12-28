@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #f4f9ff;
+  color: #333;
+  font-size: 0.875rem;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+} 
+#inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.site-title img {
+  width: 160px;
+  height: 18px;
+  margin: 60px 0 15px 0;
+}
+#mainvisual img {
+  margin-bottom: 60px;
+}
+#index {
+  background-color: #fff;
+  padding: 30px 0 30px 0;
+  margin-bottom: 70px;
+ 
+}
+.section-title {
+  text-align: left;
+  font-size: 20px;
+  padding: 0 0 20px 275px;
+}
+#index .index-list {
+  margin-left: 20px;
+}
+.index-list li {
+  list-style-position: inside;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.index-list li:last-child {
+  margin-bottom: 0;
+}
+
+#detail {
+  max-width: 1000px;
+  margin-bottom: 100px;
+}
+.img {
+  width: 275px;
+  align-items: center;
+  display: inline-block;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+.dl {
+  display: flex;
+}
+.text p {
+  width: 254px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.content {
+  margin-left: 275px;
+}
+.text {
+  padding-left: 50px;
+  width: 300px;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#detail .content dl {
+  display: flex;      /* dt、ddを横並びにする */
+  flex-wrap: wrap;    /* dtとddが100%になったら、横並びを折り返す */
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+  line-height: 1.5;
+}
+#detail .content dt {
+  width: 25%;
+}
+#detail .content dd {
+  width: 75%;
+}
+#footer .inner {
+  margin-left: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+  .site-title img {
+    padding-left: 10px;
+  }
+  #mainvisual img {
+    padding: 0 10px;
+  }
+  .inner {
+    padding: 0 40px;
+  }
+  .index-list li {
+    list-style-position: outside;
+    text-align: left;
+  }
+  #detail .content {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .section-title {
+    padding-left: 0;
+  }
+  .img {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+  }
+  .text p {
+    width: 100%;
+  }
+  .title  {
+    margin-top: 25px;
+  }
+  #footer .inner {
+    margin-left: 0;
+  }
+}
